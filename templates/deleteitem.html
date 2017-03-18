@@ -1,0 +1,31 @@
+{% extends "base_secondary.html" %}
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <form class="form-horizontal" method="post" action="">
+        <fieldset>
+        <!-- Form Name -->
+        <legend>Delete Item</legend>
+
+        <!-- Hidden input-->
+        <div class="form-group">
+          <div class="col-md-4">
+          <input type="hidden" name="item_id" value="{{item.id}}">
+          </div>
+        </div>
+
+        <!-- Item deletion warning-->
+        <div class="form-group">
+          <label>Are you sure you want to delete this item?</label>
+          <p>{{item.name}}</p>
+          <button id="" name="" class="btn btn-danger">Delete</button>
+        </div>
+
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+    <!-- /.container -->
+{% endblock %}

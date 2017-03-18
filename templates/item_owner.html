@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="col-md-9">
+    <div class="thumbnail">
+        <img class="img-responsive" src="{{item.picture}}" alt="">
+        <div class="caption-full">
+            <h4 class="pull-right">{{item.price}}</h4>
+            <h4><a href="#">{{item.name}}</a>
+            </h4>
+            <p>{{item.description}}</p>
+        </div>
+    </div>
+    <a href="edit" class="btn btn-warning"><span class="glyphicon glyphicon-wrench"></span> Edit Item</a>
+    <br>
+    <br>
+    <form action="delete">
+	    <input type="submit" class="btn btn-danger" value="Delete">
+	</form>
+</div>
+
+{% endblock %}

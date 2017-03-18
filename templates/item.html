@@ -1,0 +1,17 @@
+{% extends "base_secondary.html" %}
+{% block body %}
+<div class="container">
+        <div class="row">
+			<div class="col-md-9">
+			    <div class="thumbnail">
+			        <img class="img-responsive" src="{{item.picture}}" alt="">
+			        <div class="caption-full">
+			            <h4 class="pull-right">{{item.price}}</h4>
+			            <h4>{{item.name}}</h4>
+			            <p>{{item.description}}</p>
+			        </div>
+			    </div>
+			</div>
+        </div>
+    </div>
+{% endblock %}

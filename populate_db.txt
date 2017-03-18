@@ -1,0 +1,25 @@
+# user = User(name = 'Connor',
+#             email = 'connorcallison@gmail.com',
+#             picture = 'lol',
+#             id = 1)
+# session.add(user)
+
+# drone_cat = Category(name = "Drones",
+#                      user_id = 1)
+# camera_cat = Category(name = "Cameras",
+#                      user_id = 1)
+# soft_cat = Category(name = "Software",
+#                      user_id = 1)
+
+# session.add(drone_cat)
+# session.add(camera_cat)
+# session.add(soft_cat)
+
+# drone = Item(name = "DJI Phantom 4",
+# price = "$1000",
+# description = "A camera drone with top rated obstacle avoidance",
+# category = drone_cat,
+# picture = 'https://www.cinema5d.com/wp-content/uploads/2016/03/Phantom-4-Action-5.jpg',
+# user_id = 1)
+# session.add(drone)
+# session.commit()
